@@ -91,7 +91,7 @@ export default class ChatBot {
         messageHTML = this.randomMessages(this.secretary);
         break;
       default:
-        messageHTML = 'Не понимаю, о чём речь. Я ещё учусь, поэтому выразиться точнее';
+        messageHTML = 'Не понимаю, о чём речь. Я ещё учусь, поэтому прошу выразиться точнее';
         break;
     }
 
