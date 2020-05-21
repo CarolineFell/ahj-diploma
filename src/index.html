@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AHJ. Chaos Organizer</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 class="header">Welcome to AHJ. Chaos Organizer</h1>
+    <div class="concept-window">
+      <p class="name-window">Основная концепция</p>
+      <p>Ключевая идея - создать бота, который предназначен как для хранения информации, так и для поиска, 
+        и других сервисов: напоминания, уведомление и интеграция с внешними сервисами.</p>
+      <p>Назовём это глобальным ботом-органайзером - вы закидывате туда всю информацию, которая вам нужна, 
+        а он сортирует, обеспечивает поиск, хранение и напоминание.</p>
+      <div class="button-window" id="button-window">Перейти к онлайн-чату</div>
+    </div>
+    <div class="password-window hidden">
+      <p class="name-window">Введите пароль</p>
+      <input type="password" id="input-password" placeholder="Введите пароль"/>
+      <div class="button-window" id="submit-password">Продолжить</div>
+    </div>
+    <div class="type-password-window hidden">
+      <p>А как же безопасность?<br>Прошу пароль.</p>
+    </div>
+    <div class="messanger hidden">
+      <div class="attachment-favorite">
+        <input type="file" id="button-select" />
+        <div class="attachment sidebar"></div>
+        <div id="favorits" class="favorite sidebar"></div>
+      </div>
+      <div id="drop-file" class="display-messages">
+        <div class="message">
+          Чтобы обратиться к боту, введите точку, пробел и одно из возможных сообщений: "привет", "как дела?",
+          "какая на сегодня погода?", "какие планы?", "чего бы поесть?", "рассписание на сегодня". Например: ". привет"
+        </div>
+      </div>
+      <div class="input-field">
+        <textarea type="text" id="input-text" placeholder="Введите сообщение"></textarea>
+        <div class="audio-video">
+          <div class="record-on">
+            <div id="audio" class="sidebar"></div>
+            <div id="video" class="sidebar"></div>
+          </div>
+          <div class="geo-tag sidebar"></div>
+          <div class="record-off hidden">
+            <div id="save" class="sidebar"></div>
+            <span id="timer">00:00</span>
+            <div id="cancel" class="sidebar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="export-history">.</div>
+  </body>
+</html>
